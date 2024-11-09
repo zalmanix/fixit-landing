@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -40,27 +41,27 @@ export default function RootLayout({
               className="w-10 h-10"
             />
             <nav className="flex gap-6">
-              <a href="/" className="text-lg font-semibold hover:underline">
+              <Link href="/" className="text-lg font-semibold hover:underline">
                 Home
-              </a>
-              <a href="/blog" className="text-lg font-semibold hover:underline">
+              </Link>
+              <Link href="/blog" className="text-lg font-semibold hover:underline">
                 Blog
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/services"
                 className="text-lg font-semibold hover:underline"
               >
                 Usługi
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="text-lg font-semibold hover:underline"
               >
                 Kontakt
-              </a>
-              <a href="/faq" className="text-lg font-semibold hover:underline">
+              </Link>
+              <Link href="/faq" className="text-lg font-semibold hover:underline">
                 FAQ
-              </a>
+              </Link>
             </nav>
           </div>
         </header>

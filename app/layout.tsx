@@ -102,27 +102,33 @@ export default function RootLayout({
 
             {/* Center Section with Main Links */}
             <div className="flex flex-col gap-2">
-              <a
-                href="/about"
+            <Link href="/" className="text-lg font-semibold hover:underline">
+                Home
+              </Link>
+              <Link
+                href="/blog"
                 className="text-lg font-semibold hover:underline"
               >
-                O nas
-              </a>
-              <a
+                Blog
+              </Link>
+              <Link
                 href="/services"
                 className="text-lg font-semibold hover:underline"
               >
                 Usługi
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                href="/products"
                 className="text-lg font-semibold hover:underline"
               >
-                Kontakt
-              </a>
-              <a href="/faq" className="text-lg font-semibold hover:underline">
+                Produkty
+              </Link>
+              <Link
+                href="/faq"
+                className="text-lg font-semibold hover:underline"
+              >
                 FAQ
-              </a>
+              </Link>
             </div>
 
             {/* Right Section with Social Links */}

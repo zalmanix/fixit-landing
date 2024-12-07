@@ -57,10 +57,10 @@ export default function RootLayout({
                 Usługi
               </Link>
               <Link
-                href="/contact"
+                href="/products"
                 className="text-lg font-semibold hover:underline"
               >
-                Kontakt
+                Produkty
               </Link>
               <Link
                 href="/faq"

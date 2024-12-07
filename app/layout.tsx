@@ -44,7 +44,10 @@ export default function RootLayout({
               <Link href="/" className="text-lg font-semibold hover:underline">
                 Home
               </Link>
-              <Link href="/blog" className="text-lg font-semibold hover:underline">
+              <Link
+                href="/blog"
+                className="text-lg font-semibold hover:underline"
+              >
                 Blog
               </Link>
               <Link
@@ -59,7 +62,10 @@ export default function RootLayout({
               >
                 Kontakt
               </Link>
-              <Link href="/faq" className="text-lg font-semibold hover:underline">
+              <Link
+                href="/faq"
+                className="text-lg font-semibold hover:underline"
+              >
                 FAQ
               </Link>
             </nav>
@@ -73,7 +79,10 @@ export default function RootLayout({
           height={200}
           className="w-full max-w-[1200px] m-auto"
         />
-        {children}
+
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full max-w-[1200px] mx-auto">
+          {children}
+        </main>
 
         <footer className="row-start-3 w-full bg-[#1a1e28] text-slate-300 mt-10 p-8">
           <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-16">
